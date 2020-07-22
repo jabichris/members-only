@@ -60,7 +60,7 @@ class PostsController < ApplicationController
     end
   end
 
-    private
+  private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_post
@@ -71,4 +71,4 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:body)
   end
-  end
+end
